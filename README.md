@@ -4,11 +4,11 @@
 
 ![](img/hyped-presents-home.gif)
 
-_**Clique aqui para ter acesso a conteúdo [Hype.](https://flaviodart.github.io/Hyped./) de verdade.**_
+_**Just click here to see truly [[Hyped.]](https://flaviodart.github.io/Hyped./) content.**_
 
 
 
-## Tecnologias usadas.
+## _Used Technology._
 
 - [x] **a little bit CSS3**
 - [x] **some HTML5**
