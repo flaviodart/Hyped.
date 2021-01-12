@@ -1,0 +1,72 @@
+#navigation-bar a {
+     color: black;
+     background-color: white;
+     border: 3px solid white;
+}
+
+#navigation-bar a:hover {
+     color: black;
+     background-color: white;
+     border: 3px solid black;
+}
+
+
+/* Publicaçoes recentes */
+
+.card {
+     border: 1px solid white;
+}
+
+.card a {
+     border: 1px solid white;
+     display: flex;
+     color: white;
+     background-color: black;
+     align-items: flex-end !important;
+}
+
+.card a:hover {
+     background-color: white;
+     color: black;
+     border: 1px solid black !important;
+}
+
+.card-footer {
+     background-color: white !important;
+     border-top: none !important;
+}
+
+
+/* "Quem eu sou" */
+#mid-cards {
+     color: white;
+     background-color: grey;
+     width: 50rem;
+}
+
+#mid-cards a {
+     display: flex;
+}
+
+/* melhores jogos */
+#best-gaming {
+     color: black;
+     border: 3px solid white;
+     border-radius: 0;
+}
+
+#best-gaming:hover{
+     border: 3px solid black;
+     border-radius: 0;
+}
+
+
+/* Posts "antigos" */
+#others-cards {
+     border-radius: none !important;
+     flex-direction: row;
+}
+
+#others-cards img {
+     width: 30%;
+}
