@@ -1,7 +1,7 @@
 #navigation-bar a {
      color: black;
      background-color: white;
-     border: 3px solid white;
+     border: 1px solid white;
 }
 
 #navigation-bar a:hover {
