@@ -17,9 +17,17 @@
 
 #navigation-bar a:hover {
      color: black;
-     /* background-color: rgb(187, 187, 187); */
      background-color: white;
      border: 1px solid black;
+}
+
+#back-img {
+     background-image: url(../img/key.jpg);
+     background-position: 0 -100px;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-blend-mode: multiply;
 }
 
 /* Publicaçoes recentes */
