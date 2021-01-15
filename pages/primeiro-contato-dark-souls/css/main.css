@@ -1,26 +1,27 @@
 /* Default setting */
 #title-page {
      margin-top: 10px;
-     border: 1px solid black;
+     border: 5px solid black;
      border-bottom: none;
-}
-
-#navigation-bar {
-     border: 1px solid black;
+}#navigation-bar {
+     border: 5px solid black;
      border-top: none;
-}
-
-#navigation-bar a {
+}#navigation-bar a {
      color: black;
      background-color: white;
-     border: 1px solid white;
-}
-
-#navigation-bar a:hover {
+     border: 3px solid white;
+}#navigation-bar a:hover {
      color: black;
      background-color: white;
-     border: 1px solid black;
+     border: 3px solid black;
 }
 
+
+
+#signature {
+     border: 3px solid black;
+     box-shadow: 5px 5px 1px black;
+     width: fit-content;
+}
 /* Image settings */
 

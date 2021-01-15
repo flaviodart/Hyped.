@@ -3,15 +3,19 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <script src="https://kit.fontawesome.com/b324bebc66.js" crossorigin="anonymous"></script>
+
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
      <link rel="stylesheet" href="css/main.css">
      
      <title>Hyped.</title>
+
 </head>
 <body>
 
+     <!-- Título e sub-Título da página -->
      <div id="title-page" class="container" >
           <a href="index.html" style="color: black; text-decoration: none;">
                <h1 class="d-flex justify-content-center display-3">
@@ -23,29 +27,27 @@
           </span>
      </div>
 
-
-     <nav id="navigation-bar" class="navbar navbar-expand-lg container">
+     <!-- barra de navegação -->
+     <nav id="navigation-bar" class="d-flex justify-content-between navbar navbar-expand-lg container">
           <!-- Thats usefull for a minimal and linkeable brand --> 
-          <div class="collapse navbar-collapse" id="navbarText">
+          <div class="navbar" id="navbar-item">
                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                         <a class="nav-link m-2" href="index.html">Home</a>
+                         <a class="nav-link m-2" href="index.html" style="border: 3px solid black; background-color: black; color: white;">🏠 Home</a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link m-2" href="#">More</a>
+                         <a class="nav-link m-2" href="pages/who-is-me/index.html">😎 Who is me?</a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link m-2" href="#">Social</a>
+                         <a class="nav-link m-2" href="#">🎮 My favorite games</a>
                     </li>
                </ul>
-               <span class="navbar-text m-2" style="font-style: italic; color: grey;">
-                    Força, Equilíbrio e Vontade.
-               </span>
           </div>
-        </nav>
-
+          <span class="navbar-text m-2" style="font-style: italic; color: grey;">
+               Força, Equilíbrio e Vontade.
+          </span>
+     </nav>
      
-
      <!-- Carousel com wallpapers -->
      <div id="carouselExampleControls" class="carousel slide container w-75 mt-5 " data-ride="carousel">
           <div class="carousel-inner">
@@ -98,18 +100,19 @@
 
      </div>
 
-
-
-     <!-- main -->
+     <!-- Cnteúdo Principal -->
      <div id="main">
+
+          <!-- display "Últimos posts" -->
           <div class="container m-5 p-4" id="main-text">
                <span class="display-4">
                     Últimos posts...
                </span>
           </div>
 
+          <!-- Cards de posts recentes -->
           <div id="main-itens">
-               <div class="d-flex justify-content-around">
+               <div id="main-itens-posts" class="d-flex justify-content-around">
                     <div class="card" style="width: 18rem;">
                          <img class="card-img-top" src="img/thumb/darksouls2.jpg" alt="capa do card">
                          <div class="card-body">
@@ -155,160 +158,153 @@
                          </div>
                     </div>        
                </div>
-
-          
-          <!-- onde me encontrar -->
-          <div class="container mt-5 ml-4 mb-4" id="main-text">
-               <span class="display-4">
-                    Onde me encontrar
-               </span>
           </div>
      
-          <div id="socials" class="d-flex justify-content-around mt-3 mb-3 p-3">
-               <a href="https://twitter.com/flavinkk" target="_blank" style="text-decoration: none;">
-                    <div class="card text-white " style="width: 18rem; height: 6rem; border: none; background-color: cornflowerblue;">
-                         <div class="card-body">
-                              <span class="display-4">
-                                   Twitter
-                              </span>
-                         </div>
-                    </div> 
-               </a>
-
-               
-               <a href="https://www.linkedin.com/in/flavio-henrique-5836661a1/" target="_blank" style="text-decoration: none;">
-                    <div class="card text-white " style="width: 18rem; height: 6rem; border: none; background-color: royalblue;">
-                         <div class="card-body">
-                              <span class="display-4">
-                                   Linked.in
-                              </span>
-                         </div>
-                    </div>
-               </a>
-
-               <a href="https://github.com/flaviodart" target="_blank" style="text-decoration: none;">
-                    <div class="card text-white " style="width: 18rem; height: 6rem; border: none; background-color: slategray;">
-                         <div class="card-body">
-                              <span class="display-4">
-                                   Github
-                              </span>
-                         </div>
-                    </div>
-               </a>
-
-               <a href="https://steamcommunity.com/id/flavinkk/" target="_blank" style="text-decoration: none;">
-                    <div class="card text-white " style="width: 18rem; height: 6rem;  border: none; background-color: black;">
-                         <div class="card-body">
-                              <span class="display-4 p-4">
-                                   Steam
-                              </span>   
-                         </div>
-                    </div>
-               </a>
-          </div>
      </div>
 
-
-
-
-     <!-- "Quem sou eu", e "quais meus títulos favoritos". -->
-
+          <!-- "Quem sou eu". -->
      <div class="d-flex justify-content-center mt-5">
-          <div class="card" id="mid-cards">
+          <div class="card" id="who-is-me-card">
                <div class="card-body d-flex justify-content-around">
                     <h5 class="card-title display-3 m-5">Quem sou ?</h5>
                     <p class="card-text m-5 font-italic">Me chamo Flavio Henrique, tenho 21 anos de idade e curso Sistemas para Internet no Instituto Federal da Paraíba, aficcionado por jogos desde muito novo quem sabe um dia não trabalhe em um, mas por enquanto venho me desenvolvendo no front-End, com HTML, CSS e JavaScript, tudo aqui é minha opinião como um jogador casual, que curte jogos competitivos tanto quanto jogos com boa história.</p>
                </div>
+
+               <button type="button" class="btn btn-outline-light m-2">veja mais</button>
+
+
           </div>
      </div>
 
+     <!-- "quais meus títulos favoritos" -->
      <div class="d-flex justify-content-center m-5">
-          <div id="best-gaming" class="card bg-warning">
+          <div class="card bg-warning" id="my-favorite-games-card">
                <div class="card-body">
+                    
                     <h5 class="card-title text-white display-4">Quais são os meus jogos preferidos?</h5>
+
+                    <div class="d-flex justify-content-between">
+                         <p class="card-text font-italic text-white ml-3 mt-3">Montei uma lista com os 5 jogos que eu mais joguei e o que me fez ama-los tanto.</p>
+                         <button type="button" class="btn btn-outline-light ml-3 mt-3">veja mais</button>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+
+     <!-- Outras publicações -->
+     <div  class="container pb-5">
+
+          <div id="another-post" class="row p-3 m-4 justify-content-center">
+               <div class="col-5 align-self-center">
+                    <img class="w-100" src="img/thumb/steam.png" alt="Imagem de capa do card" >
+               </div>
+               <div class="col-5">
+                    <h5 class="card-title">Minha lista de desejos da Steam</h5>
                     <p class="card-text">
-                         <small class="text-muted font-italic">Montei uma lista com os 5 jogos que eu mais joguei e o que me fez ama-los tanto.</small>
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit blanditiis temporibus fugit sunt, odit voluptates consectetur reiciendis provident quas libero amet culpa, vero deleniti harum quibusdam debitis eveniet commodi.
+                    </p>
+                    <span class="badge badge-pill badge-dark">Lista</span>
+                    <p class="card-text">
+                         <small class="font-italic">Por Flavio Henrique</small>
+                    </p>
+               </div>
+          </div>
+
+          <div id="another-post" class="row p-3 m-4 justify-content-center">
+               <div class="col-5 align-self-center">
+                    <img class="w-100" src="img/thumb/cyber77.jpg" alt="Imagem de capa do card" >
+               </div>
+               <div class="col-5">
+                    <h5 class="card-title">Minha lista de desejos da Steam</h5>
+                    <p class="card-text">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit blanditiis temporibus fugit sunt, odit voluptates consectetur reiciendis provident quas libero amet culpa, vero deleniti harum quibusdam debitis eveniet commodi.
+                    </p>
+                    <span class="badge badge-pill badge-dark">Lista</span>
+                    <p class="card-text">
+                         <small class="font-italic">Por Flavio Henrique</small>
+                    </p>
+               </div>
+          </div>
+
+          <div id="another-post" class="row p-3 m-4 justify-content-center">
+               <div class="col-5 align-self-center">
+                    <img class="w-100" src="img/thumb/bloodborne.jpg" alt="Imagem de capa do card" >
+               </div>
+               <div class="col-5">
+                    <h5 class="card-title">Minha lista de desejos da Steam</h5>
+                    <p class="card-text">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit blanditiis temporibus fugit sunt, odit voluptates consectetur reiciendis provident quas libero amet culpa, vero deleniti harum quibusdam debitis eveniet commodi.
+                    </p>
+                    <span class="badge badge-pill badge-dark">Lista</span>
+                    <p class="card-text">
+                         <small class="font-italic">Por Flavio Henrique</small>
+                    </p>
+               </div>
+          </div>
+
+          <div id="another-post" class="row p-3 m-4 justify-content-center">
+               <div class="col-5 align-self-center">
+                    <img class="w-100" src="img/thumb/witcher3.jpg" alt="Imagem de capa do card" >
+               </div>
+               <div class="col-5">
+                    <h5 class="card-title">Minha lista de desejos da Steam</h5>
+                    <p class="card-text">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit blanditiis temporibus fugit sunt, odit voluptates consectetur reiciendis provident quas libero amet culpa, vero deleniti harum quibusdam debitis eveniet commodi.
+                    </p>
+                    <span class="badge badge-pill badge-dark">Lista</span>
+                    <p class="card-text">
+                         <small class="font-italic">Por Flavio Henrique</small>
+                    </p>
+               </div>
+          </div>
+
+          <div id="another-post" class="row p-3 m-4 justify-content-center">
+               <div class="col-5 align-self-center">
+                    <img class="w-100" src="img/thumb/mafia2.jpg" alt="Imagem de capa do card" >
+               </div>
+               <div class="col-5">
+                    <h5 class="card-title">Minha lista de desejos da Steam</h5>
+                    <p class="card-text">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit blanditiis temporibus fugit sunt, odit voluptates consectetur reiciendis provident quas libero amet culpa, vero deleniti harum quibusdam debitis eveniet commodi.
+                    </p>
+                    <span class="badge badge-pill badge-dark">Lista</span>
+                    <p class="card-text">
+                         <small class="font-italic">Por Flavio Henrique</small>
                     </p>
                </div>
           </div>
      </div>
 
-
-
-
-     <!-- Outras publicações -->
-
-     <div class="justify-content-center m-5">
-          <div class="d-flex flex-column m-5 mh-100">
-               <div id="others-cards" class="card m-5 w-75" >
-                    <img class="card-img-top" src="img/thumb/mafia2.jpg" alt="Imagem de capa do card" >
-                    <div class="card-body p-2">
-                         <h5 class="card-title ml-3">Minha opinião sobre Mafia 2</h5>
-                         <p class="card-text ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit blanditiis temporibus fugit sunt, odit voluptates consectetur reiciendis provident quas libero amet culpa, vero deleniti harum quibusdam debitis eveniet commodi.</p>
-                         <span class="badge badge-pill badge-success ml-3">Opinião</span>
-                         <p class="card-text ml-3">
-                              <small class="text-muted">Por Flavio Henrique</small>
-                         </p>
-                    </div>
-               </div>
-
-               <div id="others-cards" class="card m-5 w-75" >
-                    <img class="card-img-top" src="img/thumb/witcher3.jpg" alt="Imagem de capa do card" >
-                    <div class="card-body p-2">
-                         <h5 class="card-title ml-3">5 anos depois e eu ainda não joguei a fio Witcher 3</h5>
-                         <p class="card-text ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit blanditiis temporibus fugit sunt, odit voluptates consectetur reiciendis provident quas libero amet culpa, vero deleniti harum quibusdam debitis eveniet commodi.</p>
-                         <span class="badge badge-pill badge-info ml-3">Primeiro Contato</span>
-                         <p class="card-text ml-3">
-                              <small class="text-muted">Por Flavio Henrique</small>
-                         </p>
-                    </div>
-               </div>
-
-               <div id="others-cards" class="card m-5 w-75" >
-                    <img class="card-img-top" src="img/thumb/bloodborne.jpg" alt="Imagem de capa do card" >
-                    <div class="card-body p-2">
-                         <h5 class="card-title ml-3">Tristeza de um <i>PC Gamer</i> que provavelmente nunca terá Bloodborne em sua plataforma</h5>
-                         <p class="card-text ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit blanditiis temporibus fugit sunt, odit voluptates consectetur reiciendis provident quas libero amet culpa, vero deleniti harum quibusdam debitis eveniet commodi.</p>
-                         <span class="badge badge-pill badge-info ml-3">Primeiro Contato</span>
-                         <p class="card-text ml-3">
-                              <small class="text-muted">Por Flavio Henrique</small>
-                         </p>
-                    </div>
-               </div>
-
-               <div id="others-cards" class="card m-5 w-75" >
-                    <img class="card-img-top" src="img/thumb/cyber77.jpg" alt="Imagem de capa do card" >
-                    <div class="card-body p-2">
-                         <h5 class="card-title ml-3">quando Cyberpunk será "jogável" ?</h5>
-                         <p class="card-text ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit blanditiis temporibus fugit sunt, odit voluptates consectetur reiciendis provident quas libero amet culpa, vero deleniti harum quibusdam debitis eveniet commodi.</p>
-                         <span class="badge badge-pill badge-info ml-3">Primeiro Contato</span>
-                         <p class="card-text ml-3">
-                              <small class="text-muted">Por Flavio Henrique</small>
-                         </p>
-                    </div>
-               </div>
-
-               <div id="others-cards" class="card m-5 w-75" >
-                    <img class="card-img-top" src="img/thumb/steam.png" alt="Imagem de capa do card" >
-                    <div class="card-body p-2">                         
-                         <h5 class="card-title ml-3">Minha lista de desejos da Steam</h5>
-                         <p class="card-text ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit blanditiis temporibus fugit sunt, odit voluptates consectetur reiciendis provident quas libero amet culpa, vero deleniti harum quibusdam debitis eveniet commodi.</p>
-                         <span class="badge badge-pill badge-dark ml-3">Lista</span>
-                         <p class="card-text ml-3">
-                              <small class="text-muted">Por Flavio Henrique</small>
-                         </p>
-                    </div>
-               </div>
+<footer class="d-flex flex-column bg-dark text-white p-4" >
+               <!-- Icones social media -->
+          <div class="d-flex justify-content-center">
+                    <!-- twitter -->
+               <a href="https://twitter.com/flavinkk" target="_blank">
+                    <i class="fab fa-twitter text-white p-3" style="font-size: 25px;"></i>
+               </a>
+                    <!-- linked.in -->
+               <a href="https://www.linkedin.com/in/flavio-henrique-5836661a1/" target="_blank">
+                    <i class="fab fa-linkedin text-white p-3" style="font-size: 25px;"></i>
+               </a>
+                    <!-- steam -->
+               <a href="https://steamcommunity.com/id/flavinkk/" target="_blank">
+                    <i class="fab fa-steam text-white p-3" style="font-size: 25px;"></i>
+               </a>
+                    <!-- github -->
+               <a href="https://github.com/flaviodart" target="_blank">
+                    <i class="fab fa-github text-white p-3" style="font-size: 25px;"></i>
+               </a>
           </div>
-     </div>
-
-     <div class="bg-dark d-flex justify-content-around" >
-          <span class="display-5 m-3 text-white">
+               <!-- frase engraçada hahaha funny meme boyz -->
+          <div class="d-flex justify-content-center m-3">
                feito com ódio 🖕, e com bootstrap 👨🏻‍💻.
-          </span>
-     </div>
-
-
+          </div>
+               <!-- Atribuição ao designer dos ícones -->
+          <div class="font-weight-light">
+               Ícones feitos por <a href="https://www.flaticon.com/br/autores/pixel-perfect" title=" Pixel perfect ">Pixel perfect 👩🏼‍🎨</a> from <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com </a>
+          </div>
+</footer>
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>

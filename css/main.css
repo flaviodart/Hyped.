@@ -1,94 +1,103 @@
+/* Título, barra de navegação e por fim seus hovers */
 #title-page {
      margin-top: 10px;
-     border: 1px solid black;
+     border: 5px solid black;
      border-bottom: none;
-}
-
-#navigation-bar {
-     border: 1px solid black;
+}#navigation-bar {
+     border: 5px solid black;
      border-top: none;
-}
-
-#navigation-bar a {
+}#navigation-bar a {
      color: black;
      background-color: white;
-     border: 1px solid white;
-}
-
-#navigation-bar a:hover {
+     border: 3px solid white;
+}#navigation-bar a:hover {
      color: black;
      background-color: white;
-     border: 1px solid black;
-}
-
-#back-img {
-     background-image: url(../img/key.jpg);
-     background-position: 0 -100px;
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-blend-mode: multiply;
+     border: 3px solid black;
 }
 
 /* Publicaçoes recentes */
-.card {
-     border: 1px solid white;
+#main-itens-posts a {
+     transform-origin: 0 0;
+     transition: transform .25s, visibility .30s ease-in;
+}#main-itens-posts a:hover {
+     transform: scale(1.005)
 }
 
-.card a {
+/* Cards gerais */
+.card {
+     border: 1px solid white;
+}.card a {
      border: 1px solid white;
      display: flex;
      color: white;
      background-color: black;
      align-items: flex-end !important;
-}
-
-.card a:hover {
+}.card a:hover {
      background-color: grey;
      color: white;
      border: 1px solid grey !important;
-}
-
-.card-footer {
+}.card-footer {
      background-color: white !important;
      border-top: none !important;
 }
 
 
-/* "Quem eu sou" */
-#mid-cards {
+/* "Who am i" */
+#who-is-me-card {
      color: white;
      background-color: grey;
      width: 50rem;
-}
-
-#mid-cards a {
+}#who-is-me-card a {
      display: flex;
 }
 
-/* melhores jogos */
-#best-gaming {
+/* lista de melhores jogos */
+#my-favorite-games-card {
      color: black;
      border: 3px solid white;
      border-radius: 0;
 }
 
-.text-muted {
-     color: white !important;
-}
-
-#best-gaming:hover{
-     border: 3px solid black;
-     border-radius: 0;
-}
-
 
 /* Posts "antigos" */
-#others-cards {
-     border-radius: none !important;
-     flex-direction: row;
+#another-post{
+     border-top-left-radius: 4px;
+     border-top-right-radius: 4px;
+     border-bottom-right-radius: 4px;
+     border-bottom-left-radius: 4px;
+     border-left: 4px solid black;
+
+     transform-origin: 0 0;
+     transition: transform .25s, visibility .30s ease-in;
 }
 
-#others-cards img {
-     width: 30%;
+#another-post img {
+     border: 2px solid black;
+}
+
+#another-post:hover {
+     background-color: rgb(189, 189, 189);
+
+     transform: scale(1.005)
+}
+
+/* responsividade */
+
+@media(max-width: 768px) {
+     .navbar-nav {
+          display: flex;
+          flex-direction: row;
+          padding-left: 0;
+          margin-bottom: 0;
+     }
+
+     #main-itens-posts {
+          flex-direction: column;
+     }
+
+     #main-itens-posts div {
+          justify-content: center;
+     }
+
 }

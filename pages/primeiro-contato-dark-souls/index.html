@@ -25,24 +25,24 @@
 
 
      <!-- Navigation bar with nav-items -->
-     <nav id="navigation-bar" class="navbar navbar-expand-lg container bg-white">
+     <nav id="navigation-bar" class="d-flex justify-content-between navbar navbar-expand-lg container">
           <!-- Thats usefull for a minimal and linkeable brand --> 
-          <div class="collapse navbar-collapse" id="navbarText">
+          <div class="navbar" id="navbar-item">
                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                         <a class="nav-link m-2" href="https://flaviodart.github.io/Hyped./">Home</a>
+                         <a class="nav-link m-2" href="/index.html">🏠 Home</a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link m-2" href="#">More</a>
+                         <a class="nav-link m-2" href="/pages/who-is-me/index.html">😎 Who is me?</a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link m-2" href="#">Social</a>
+                         <a class="nav-link m-2" href="#">🎮 My favorite games</a>
                     </li>
                </ul>
-               <span class="navbar-text m-2" style="font-style: italic; color: grey;">
-                    Força, Equilíbrio e Vontade.
-               </span>
           </div>
+          <span class="navbar-text m-2" style="font-style: italic; color: grey;">
+               Força, Equilíbrio e Vontade.
+          </span>
      </nav>
 
      <!-- main content -->
@@ -90,10 +90,11 @@
      <div class="d-flex justify-content-center">
           <img src="img/keep-safe.gif" alt="keep-safe" title="keep safety, traveler...">
      </div>
-
-     <p class="d-flex justify-content-center mt-3 mb-5">
-          <small class=" text-muted font-italic">por Flavio Henrique, 12 de Janeiro de 2021.</small>
-     </p>
+     <div class="d-flex justify-content-center">  
+          <p id="signature" class="mt-5 mb-5 p-3">
+               <small class=" text-muted font-italic">por Flavio Henrique, 12 de Janeiro de 2021.</small>
+          </p>
+     </div>
 
      <!-- angry footer -->
      <div class="bg-dark d-flex justify-content-around" >

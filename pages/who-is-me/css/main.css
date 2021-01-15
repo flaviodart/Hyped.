@@ -1,0 +1,52 @@
+/* Título, barra de navegação e por fim seus hovers */
+#title-page {
+     margin-top: 10px;
+     border: 5px solid black;
+     border-bottom: none;
+}#navigation-bar {
+     border: 5px solid black;
+     border-top: none;
+}#navigation-bar a {
+     color: black;
+     background-color: white;
+     border: 3px solid white;
+}#navigation-bar a:hover {
+     color: black;
+     background-color: white;
+     border: 3px solid black;
+}
+
+
+/* conteúdo principal */
+
+/* Imagem */
+#picture-rounded {
+     border: 5px solid black;
+}
+
+/* Título do texto principal */
+#main-content-title {
+     border: 3px solid black; 
+     box-shadow: 5px 5px 0px black;
+     width: fit-content;
+}
+
+
+/* Texto do conteúdo principal */
+#main-content-text {
+     border: 3px solid black; 
+     box-shadow: 5px 5px 0px black;
+}
+
+
+/* social cards */
+#social-item {
+     border: 3px solid black;
+}
+
+/* assinatura */
+#signature {
+     border: 3px solid black;
+     box-shadow: 5px 5px 1px black;
+     width: fit-content;
+}
